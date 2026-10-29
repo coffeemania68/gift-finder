@@ -3,6 +3,9 @@
 받는 사람·나이·예산을 고르면 선물을 추천하는 정적 사이트. GitHub Pages: https://coffeemania68.github.io/gift-finder/
 
 ## 고치는 법
+상품 이름·쿠팡 링크는 스레드 자동발행 앱(localhost:8787)의 **🎁 내 사이트 상품** 화면에서 쿠팡 검색으로 바로 넣는 게 제일 쉽다.
+`data/` 파일이 바뀌면 `.github/workflows/build.yml`이 빌드까지 해서 올린다 (2~3분). GitHub 웹에서 직접 고쳐도 똑같다.
+
 1. 상품: `data/gifts.json`
    - `link`: 쿠팡 파트너스 링크 (`https://link.coupang.com/a/...`). **비어 있으면 쿠팡 검색 페이지로 연결되고 수수료가 붙지 않는다.**
    - `q`: 쿠팡 파트너스에서 링크를 만들 때 검색할 상품명
